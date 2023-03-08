@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1AF | sed -E 's/(.*)\/$/\1\//; s/\n/, /g'
+ls -1AF | sed -E 's/(.*)\/$/\1\//' | tr '\n' ', ' && echo
