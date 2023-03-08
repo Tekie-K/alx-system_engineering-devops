@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1AF | sed 's/[^[:alnum:]\.\/]/\\&/g' | sort -d -f -k1.1 | sed -E 's/(.*)\/$/\1\//' | paste -sd "," -; echo
+ls -xmp
